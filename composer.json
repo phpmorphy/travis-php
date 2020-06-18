@@ -21,11 +21,10 @@
         "phpunit/phpunit": ">=4"
     },
     "config": {
-        "disable-tls": true,
-        "sort-packages": true,
-        "secure-http": false
+        "sort-packages": true
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit",
+        "phpunit": "phpunit"
     }
 }

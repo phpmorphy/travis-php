@@ -15,5 +15,6 @@ jobs:
 install: 
 
 script:
-  - composer require phpunit/phpunit --update-no-dev
+  - composer install --no-dev
+  - composer require phpunit/phpunit --no-update
   - composer test

@@ -1,5 +1,5 @@
 {
-    "name": "travis-php",
+    "name": "phpmorphy/travis-php",
     "description": "Travis CI - setup for PHP",
     "type": "library",
     "license": "MIT",

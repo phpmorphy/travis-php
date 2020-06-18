@@ -18,9 +18,7 @@
         "php-64bit": ">=5.3"
     },
     "require-dev": {
-        "phpcompatibility/php-compatibility": "^9",
-        "phpstan/phpstan": "^0.12",
-        "phpunit/phpunit": "^9"
+        "phpunit/phpunit": ">=4"
     },
     "config": {
         "sort-packages": true

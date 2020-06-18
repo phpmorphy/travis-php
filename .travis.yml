@@ -15,6 +15,6 @@ jobs:
 install: 
 
 script:
-  - composer install --no-dev
   - composer require phpunit/phpunit --no-update
+  - composer dump-autoload
   - composer test

@@ -18,13 +18,14 @@
         "php-64bit": ">=5.3"
     },
     "require-dev": {
+        "phpcompatibility/php-compatibility": "^9",
+        "phpstan/phpstan": "^0.12",
         "phpunit/phpunit": "^9"
     },
     "config": {
         "sort-packages": true
     },
     "scripts": {
-        "test": "phpunit",
-        "phpunit": "phpunit"
+        "test": "phpunit"
     }
 }

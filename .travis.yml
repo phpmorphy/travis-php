@@ -4,6 +4,10 @@ php:
   - 7.0
   - 7.4
 
+cache:
+  directories:
+    - $HOME/.composer/cache/files
+
 jobs:
   include:
     - php: 5.3

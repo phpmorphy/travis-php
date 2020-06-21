@@ -8,6 +8,10 @@ cache:
   directories:
     - $HOME/.composer/cache/files
 
+env:
+  global:
+    - COVERALLS_PARALLEL=true
+
 jobs:
   include:
     - php: 5.3
@@ -17,3 +21,14 @@ jobs:
 
 install:
   - composer install
+  - composer require --dev php-coveralls/php-coveralls  
+  - mkdir -p build/logs
+
+script:
+  - php vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+
+after_success:
+  - php vendor/bin/php-coveralls -v
+
+notifications:
+  webhooks: https://coveralls.io/webhook

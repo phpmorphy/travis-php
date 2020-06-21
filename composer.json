@@ -17,6 +17,6 @@
     },
     "scripts": {
         "test": "phpunit",
-        "coverage": "phpunit --coverage-html coverage",
+        "coverage": "phpunit --coverage-html coverage"
     }
 }

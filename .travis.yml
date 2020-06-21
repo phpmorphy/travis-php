@@ -18,8 +18,9 @@ jobs:
       dist: precise
       install:
         - composer install
-        - composer require --dev php-coveralls/php-coveralls '^1.0'
-        - mkdir -p build/logs
+      script:
+        - php vendor/bin/phpunit
+      after_success:
     - php: 5.4
       dist: trusty
 
